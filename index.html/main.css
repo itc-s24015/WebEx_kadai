@@ -1,0 +1,110 @@
+/* 基本のリセット */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ヘッダー */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #f39c12; /* 黄色 */
+}
+
+/* メインコンテンツ */
+main {
+    margin: 20px;
+}
+
+/* 各お店のセクション */
+.restaurant {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.restaurant:hover {
+    transform: scale(1.05); /* カーソルを合わせたときに少し拡大 */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* より強いシャドウ効果 */
+}
+
+.restaurant h2 {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.restaurant img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.restaurant:hover img {
+    transform: scale(1.1); /* 画像が少しズームイン */
+}
+
+.restaurant p {
+    font-size: 1rem;
+    margin-top: 10px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.restaurant:hover p {
+    opacity: 1; /* カーソルを合わせたときにテキストの透明度が戻る */
+}
+
+/* フッター */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
