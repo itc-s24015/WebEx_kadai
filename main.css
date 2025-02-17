@@ -61,12 +61,11 @@ main {
 /* ゲームの詳細テーブル */
 .game-details {
     width: 100%;
-    border-collapse: collapse; /* セルの境界線を重ねて表示 */
+    border-collapse: collapse;
     margin: 20px 0;
     font-family: 'Arial', sans-serif;
 }
 
-/* テーブルヘッダー */
 .game-details th {
     background-color: #333;
     color: #fff;
@@ -76,37 +75,31 @@ main {
     text-transform: uppercase;
 }
 
-/* テーブルのデータセル */
 .game-details td {
     padding: 12px 15px;
-    border: 1px solid #ddd; /* セルの枠線 */
+    border: 1px solid #ddd;
     font-size: 1em;
     color: #333;
 }
 
-/* ゲームの詳細項目の強調 */
 .game-details td strong {
     color: #0066cc;
     font-weight: bold;
 }
 
-/* テーブルの行にホバー効果を追加 */
 .game-details tr:hover {
     background-color: #f4f4f4;
 }
 
-/* テーブル内のリンク */
 .game-details a {
     color: #0066cc;
     text-decoration: none;
 }
 
-/* リンクホバー時に色を変える */
 .game-details a:hover {
     color: #004a99;
 }
 
-/* 奇数行と偶数行の背景色を交互に変える */
 .game-details tr:nth-child(odd) {
     background-color: #f9f9f9;
 }
@@ -115,17 +108,7 @@ main {
     background-color: #ffffff;
 }
 
-
-/* フッター */
-footer {
-    background-color: #1e2a47;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 60px;
-    font-size: 1em;
-    border-top: 2px solid #f39c12;
-}
+/* 動画コンテナ */
 .video-container {
     position: relative;
     padding-bottom: 56.25%; /* 16:9アスペクト比 */
@@ -143,4 +126,4 @@ footer {
     height: 100%;
 }
 
-
+/* スライダー */
