@@ -1,81 +1,92 @@
-/* 全体のスタイル */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f9f9fb;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-}
-
 /* ヘッダー */
 header {
-    background-color: #2d3a3a;
+    background-color: #1e2a47;
     color: white;
-    padding: 20px 0;
+    padding: 40px 0;
     text-align: center;
-}
-
-.header-container a {
-    text-decoration: none;
-    color: inherit;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
     font-size: 2.5em;
-    margin: 0;
 }
 
-/* メインコンテンツ */
-main {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 0 20px;
+/* 戻るボタン */
+.back-button {
+    display: block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    text-align: center;
+    margin: 20px auto 30px;
+    width: 200px;
+    transition: background-color 0.3s;
 }
 
+.back-button:hover {
+    background-color: #45a049;
+}
+
+/* キャラクターリスト */
 .character-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+    padding: 60px;
 }
 
-.character {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.character-img {
+.character-table {
     width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 15px;
+    border-collapse: collapse;
+    margin-top: 20px;
 }
 
-.character-info {
+.character-table th,
+.character-table td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+}
+
+.character-table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.character-table td img.character-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.character-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* 役割の文字サイズを大きく、目立たせる */
+.role {
+    font-size: 2.0em; /* 役割の文字を大きく */
+    font-weight: bold; /* 太字 */
+    background-color: #4CAF50; /* 背景色を設定 */
+    color: white; /* 文字色を白 */
     padding: 10px;
+    border-radius: 5px; /* 角を丸く */
+    text-align: center; /* 中央揃え */
+    min-width: 200px; /* 幅を確保 */
+    margin: 0 auto; /* 役割部分が中央に来るように調整 */
 }
 
-.character-info h3 {
-    font-size: 1.8em;
-    margin-bottom: 10px;
-}
-
-.character-info .role {
-    font-weight: bold;
-    color: #444;
-}
-
-.character-info .description {
-    color: #555;
+/* 説明の部分を少し狭くする */
+.character-table td:last-child {
+    width: 45%; /* 説明部分の幅を50%に設定 */
+    text-align: left; /* 説明文を左揃え */
 }
 
 /* フッター */
 footer {
-    background-color: #2d3a3a;
+    background-color: #1e2a47;
     color: white;
     text-align: center;
-    padding: 15px 0;
-    margin-top: 30px;
-    font-size: 0.9em;
+    padding: 20px;
 }
